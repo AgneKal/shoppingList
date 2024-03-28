@@ -1,0 +1,174 @@
+body,
+body * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-image: url(./images/pexels-shonejai-1227511\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#container {
+    margin-top: 20px ;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#product_input{
+    width: 80%;
+    border: 0px solid gray;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #F5F2EDe2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;  
+}
+
+#input_shell {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.input_form {
+    width: 90%;
+    padding: 10px;
+    height: 46px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    color: #A1563D;
+    font-size: 24px;
+    background-color: #F5F2ED;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.input_form::placeholder {
+    color: grey;
+}
+
+.input_form:focus{
+    outline: none !important;
+    border: 1px solid #A1563D;
+}
+
+#products{
+    width: 80%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F5F2EDe2;
+    border: 0px solid gray;;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none; 
+}
+
+#products_header {
+    font-size: 32px;
+    text-align: center;
+    color: #A1563D;
+    font-weight: 800;
+}
+
+#products_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#products_list>li {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: #F5F2ED;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+
+.btn {
+    border: 0px solid;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: white;
+    letter-spacing: 1px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+#btn_add_product {
+    background-color:#81B3B4;
+
+}
+
+#btn_delete_products {
+    background-color: #A1563D;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.alumni-sans-normal {
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.alumni-sans-normal_italic {
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 400;
+    font-style:italic;
+}
+
+.alumni-sans-bold {
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.alumni-sans-bold_italic {
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #F5F2ED inset !important;
+    -webkit-text-fill-color: #A1563D !important;
+}
+
+@media (max-width: 600px) {
+    #container {
+        width: 100%;
+        margin: 10px 0;
+    }
+    #task_input {
+        width: 90%;
+    }
+
+    #tasks {
+        width: 90%;
+    }
+
+}
