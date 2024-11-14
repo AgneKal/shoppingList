@@ -51,3 +51,5 @@ if (lsProducts != null) {
     products = JSON.parse(lsProducts);
     showProducts();
 }
+
+const answer = 0;
